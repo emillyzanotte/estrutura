@@ -10,7 +10,7 @@ body {
   background: #f2f5f8;
   color: #222;
   line-height: 1.6;
-  padding-top: 70px; /* espaço para navbar fixa */
+  padding-top: 150px; /* espaço para navbar fixa */
 }
 
 /* Navbar */
@@ -171,4 +171,33 @@ footer {
 .logo-img {
   width: 100px; /* ajuste o tamanho que preferir */
   height: auto;
+}
+
+.school-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-bottom: 8px;
+  }
+
+  .logo {
+    justify-content: center;
+    width: 100%;
+  }
 }
