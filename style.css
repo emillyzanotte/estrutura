@@ -162,7 +162,7 @@ footer {
 .logo {
   display: flex;
   align-items: center;
-  gap: 15px; /* espaço entre imagem e texto */
+  gap: 10px; /* espaço entre imagem e texto */
   font-weight: bold;
   font-size: 1.8rem;
   color: #fff;
@@ -199,5 +199,31 @@ footer {
   .logo {
     justify-content: center;
     width: 100%;
+  }
+}
+
+.image-gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .image-gallery {
+    justify-content: center;
+  }
+  .image-gallery img {
+    max-width: 100%;
+    height: auto;
   }
 }
